@@ -1,0 +1,187 @@
+/*BASIC*/
+* {margin:0; padding: 0;}
+html, body {
+	height: 100%;
+}
+body {
+	color: #777;
+	font-family: arial;
+	font-size: 14px;
+	line-height: 22px;
+}
+hr {
+	margin: 20px 0;
+	background: #696969;
+}
+ul {
+	list-style: none;
+}
+a:hover {text-decoration: none;}
+
+.wrapp {
+	position: relative;
+	width:960px; min-height: 100%;
+	margin:0 auto;
+}
+.fl-l {float: left;}
+.fl-r {float: right;}
+.clear {clear: both;}
+
+
+/*Header*/
+header {
+	width:100%; height: 130px;
+}
+header  > div  { 
+	height: 100%;
+}
+.head-left-group, header .head3 {
+	width: 470px;
+}
+.head2, .head3 {
+	height: 100%;
+	background: #777;
+}
+header .head1 {
+	width: 150px;
+}
+header .head2 {
+	width: 300px;
+}
+header .head3 {
+	width: 430px; height: 90px;
+	padding: 20px;
+}
+header .head3, header .head3 a {
+	color: #fff;
+}
+header .head3 p, header .head3 a 
+{
+	display: block;
+	text-align: right;
+}
+
+/*Content*/
+.content {
+	position: relative;
+	overflow: hidden;
+}
+
+.left {
+	position: absolute;
+	width: 180px; height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.left .nav {
+	padding: 15px;
+	background: #777;
+	color: #fff;
+}
+.left-bottom {
+	line-height: 0;
+}
+
+
+.center {
+	width: 760px;
+}
+
+.center .about {
+	margin-bottom: 10px;
+	padding: 20px;
+	background: #dcdcdc;
+}
+.center .about h2 {
+	font-size: 14px;
+}
+.center .about ul {
+	margin:35px 0;
+	padding-left: 20px;
+}
+.center .about ul li {
+	position: relative;
+	margin: 2px 0;
+	padding-left: 10px;
+}
+.center .about ul li:after {
+	content: '';
+	position: absolute;
+	left: 0; top: 10px;
+	width: 3px; height: 3px;
+	background: #777;
+}
+
+.center .imgs-block img {
+	float: left;
+	margin-right: 20px;
+	margin:10px 20px 10px 0;
+}
+.center .imgs-block img:nth-child(5){
+	margin-right: 0;
+}
+
+.text-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.text-block > div {
+	background: #dcdcdc;
+	width: 330px;
+	padding: 20px;
+}
+
+/*Footer*/
+.spacer {
+	height: 200px;
+	clear: both;
+}
+footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	left: 0; bottom: 0;
+	width:100%; height: 200px;
+	color: #fff;
+}
+footer > div {
+	width: 266px;
+}
+
+footer .items, footer .rates {
+	background: #777;
+	padding: 20px;
+}
+
+footer .items ul {
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+footer .rates ul {
+	padding-left: 20px;
+	list-style-type: square;
+}
+.footer-info {
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column; 
+	justify-content:space-between;
+}
+.footer-info div {
+	background: #777;
+	height: 75px;
+}
